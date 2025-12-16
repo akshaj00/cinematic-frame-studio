@@ -30,11 +30,12 @@ const Hero = () => {
         
         {/* Name */}
         <h1 
-          className={`font-display text-6xl md:text-8xl lg:text-9xl tracking-wider text-foreground transition-all duration-1000 ease-out delay-200 ${
+          className={`text-6xl md:text-8xl lg:text-9xl tracking-[0.15em] text-foreground transition-all duration-1000 ease-out delay-200 ${
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
+          style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300 }}
         >
-          ALEX MERCER
+          SIDHARTH M
         </h1>
         
         {/* Role */}
