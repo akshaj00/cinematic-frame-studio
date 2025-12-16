@@ -72,20 +72,20 @@ const CinematicBackground = () => {
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 overflow-hidden pointer-events-none"
-      style={{ zIndex: 0, backgroundColor: '#000' }}
+      className="fixed inset-0 overflow-hidden pointer-events-none bg-background"
+      style={{ zIndex: 0 }}
       aria-hidden="true"
     >
       {/* Warm amber leak - top right */}
       <div
         className="light-leak absolute transition-transform duration-700 ease-out"
         style={{
-          top: '-20%',
-          right: '-10%',
-          width: '60vw',
-          height: '60vh',
-          background: 'radial-gradient(ellipse at center, hsla(35, 60%, 50%, 0.08) 0%, transparent 70%)',
-          filter: 'blur(80px)',
+          top: '-10%',
+          right: '-5%',
+          width: '70vw',
+          height: '70vh',
+          background: 'radial-gradient(ellipse at center, hsla(35, 70%, 55%, 0.25) 0%, hsla(35, 60%, 45%, 0.1) 40%, transparent 70%)',
+          filter: 'blur(60px)',
         }}
       />
       
@@ -93,12 +93,12 @@ const CinematicBackground = () => {
       <div
         className="light-leak absolute transition-transform duration-700 ease-out"
         style={{
-          bottom: '-15%',
-          left: '-15%',
-          width: '50vw',
-          height: '50vh',
-          background: 'radial-gradient(ellipse at center, hsla(270, 40%, 40%, 0.06) 0%, transparent 70%)',
-          filter: 'blur(100px)',
+          bottom: '-10%',
+          left: '-10%',
+          width: '60vw',
+          height: '60vh',
+          background: 'radial-gradient(ellipse at center, hsla(280, 50%, 45%, 0.2) 0%, hsla(270, 40%, 35%, 0.08) 40%, transparent 70%)',
+          filter: 'blur(70px)',
         }}
       />
       
@@ -106,11 +106,24 @@ const CinematicBackground = () => {
       <div
         className="light-leak absolute transition-transform duration-700 ease-out"
         style={{
-          top: '30%',
-          right: '-5%',
-          width: '40vw',
-          height: '40vh',
-          background: 'radial-gradient(ellipse at center, hsla(220, 50%, 35%, 0.05) 0%, transparent 70%)',
+          top: '40%',
+          right: '-10%',
+          width: '50vw',
+          height: '50vh',
+          background: 'radial-gradient(ellipse at center, hsla(220, 60%, 40%, 0.18) 0%, hsla(210, 50%, 30%, 0.06) 40%, transparent 70%)',
+          filter: 'blur(80px)',
+        }}
+      />
+      
+      {/* Secondary warm leak - left side */}
+      <div
+        className="light-leak absolute transition-transform duration-700 ease-out"
+        style={{
+          top: '20%',
+          left: '-15%',
+          width: '45vw',
+          height: '45vh',
+          background: 'radial-gradient(ellipse at center, hsla(25, 65%, 50%, 0.15) 0%, transparent 60%)',
           filter: 'blur(90px)',
         }}
       />
