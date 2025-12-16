@@ -1,3 +1,4 @@
+import CinematicBackground from "@/components/CinematicBackground";
 import FilmGrain from "@/components/FilmGrain";
 import Hero from "@/components/Hero";
 import VideoGrid from "@/components/VideoGrid";
@@ -7,7 +8,8 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background relative">
+      <CinematicBackground />
       <FilmGrain />
       <Hero />
       <VideoGrid />
